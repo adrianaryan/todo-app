@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODO App</title>
+    <link rel ="stylesheet" type ="text/css" href="style.css"/>
+  </head>
+  <body id="form">
+
+<form class="container" onsubmit="addTask()">
+  <div class="control-group" id="person">
+    <h1>Person</h1>
+    <label class="control control--radio" id= "adriana">Adriana
+      <input type="radio" name="who" value ="Adriana" checked="checked"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--radio" id="brody">Brody
+      <input type="radio" name="who" value="Brody"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--radio" id="bella">Bella
+      <input type="radio" name="who" value="Bella"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--radio" id="alex">Alex
+      <input type="radio" name="who" value="Alex"/>
+      <div class="control__indicator"></div>
+    </label>
+  </div>
+
+  <div class="control-group">
+    <h1>Task</h1>
+    <div class="form-group">
+      <textarea id="task" class="task" name="task" placeholder="Description goes here.."></textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <h1>Task Difficulty</h1>
+    <div class="select" id="select">
+      <select name="difficulty">
+        <option value=""> - Select - </option>
+        <option value="easy">Easy</option>
+        <option value="normal">Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <div class="select__arrow"></div>
+      <button class="btn" id="submit">Make Task!</button>
+    </div>
+  </div>
+
+
+    <div class="control-group-list">
+      <h1>TODO-LIST</h1>
+      <div class="taskLists">
+        <div><h6>Adriana's Tasks</h6>
+          <div class="list"id="todo-list-adriana"></div>
+        </div>
+        <div><h6>Brody's Tasks</h6>
+          <div class="list" id="todo-list-brody"></div>
+        </div>
+        <div><h6>Bella's Tasks</h6>
+          <div class="list" id="todo-list-bella"></div>
+        </div>
+        <div><h6>Alex's Tasks</h6>
+          <div class="list" id="todo-list-alex"></div>
+        </div>
+      </div>
+    </div>
+</form>
+<script type="text/javascript" src='script.js'></script>
+  </body>
+</html>
